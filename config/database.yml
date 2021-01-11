@@ -1,0 +1,13 @@
+base: &base
+  adapter: postgresql
+  pool: 5
+  database: movies-api
+  username: postgres
+  password: postgres
+  host: localhost
+
+development:
+  <<: *base
+
+test:
+  <<: *base
